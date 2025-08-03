@@ -26,31 +26,9 @@ public class User {
 
     private String status;
 
-    public User(LocalDate createDate, String email, long id, String name, String password, String role, String status) {
-        this.createDate = createDate;
-        this.email = email;
-        this.userId = id;
-        this.name = name;
-        this.password = password;
-        this.role = role;
-        this.status = status;
-    }
+    private Integer age;
 
-    public LocalDate getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(LocalDate createDate) {
-        this.createDate = createDate;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    private Double income;
 
     public long getUserId() {
         return userId;
