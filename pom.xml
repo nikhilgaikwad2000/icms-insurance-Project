@@ -63,6 +63,25 @@
             <version>2.3.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
+        <!-- Hibernate Validator - Bean Validation Implementation -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>8.0.1.Final</version> <!-- You can use latest compatible version -->
+        </dependency>
+
+        <!-- Needed for EL support (used in validation messages) -->
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>jakarta.el</artifactId>
+            <version>4.0.2</version>
+        </dependency>
 
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
