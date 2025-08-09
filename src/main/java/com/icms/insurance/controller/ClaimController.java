@@ -35,4 +35,11 @@ public class ClaimController {
         List<ClaimResponce> claims = claimService.getUserClaims(email);
         return ResponseEntity.ok(claims);
     }
+
+    @GetMapping("/my")
+    public ResponseEntity<List<ClaimResponce>> getMyClaims1(Principal principal) {
+        String email = principal.getName();
+        List<ClaimResponce> claims = claimService.getUserClaims(email);
+        return ResponseEntity.ok(claims);
+    }
 }
